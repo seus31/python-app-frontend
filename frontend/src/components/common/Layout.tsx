@@ -103,7 +103,7 @@ const Layout = ({ children }: LayoutProps) => {
             noWrap
             sx={{ flexGrow: 1 }}
           >
-            Dashboard
+            Python App Frontend
           </Typography>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">
