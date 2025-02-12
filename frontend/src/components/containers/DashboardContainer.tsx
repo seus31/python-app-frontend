@@ -4,10 +4,11 @@ import Dashboard from '../presenters/Dashboard'
 import { useAuth } from '../../providers/AuthContext'
 
 const DashboardContainer = () => {
-  const { token, logout } = useAuth();
+  const { token, logout } = useAuth()
 
   if (!token) {
-    return <Navigate to="/login" />;
+    logout()
+    return <Navigate to="/login" />
   }
 
   return (
